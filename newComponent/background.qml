@@ -23,19 +23,20 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
 
             Image {
-                source: "file"
+                id: logo
+                source: "qrc:/Image/image/company/logo_black.png"
+                width: sourceSize.width
+                height: sourceSize.height
             }
 
-            CusButton_Image {
-                id: close
-                //anchors.right: parent.right
-                width: 24
-                height: 24
-                btnImgUrl: hovered
-                           || pressed ? "qrc:/Image/image/Window/close_white.png" : "qrc:/Image/image/Window/close_gray.png"
-                tipText: "关闭"
-                onClicked: {
-                    dialogClose.open()
+            Image {
+                id: closeButton
+                source: "qrc:/Image/image/normal/closeDialog.png"
+                width: sourceSize.width
+                height: sourceSize.height
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: Qt.quit()
                 }
             }
         }

@@ -57,3 +57,5 @@ if(QT_VERSION_MAJOR EQUAL 6)
     qt_import_qml_plugins(adaptation)
     qt_finalize_executable(adaptation)
 endif()
+
+
