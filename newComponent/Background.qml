@@ -7,6 +7,7 @@ Item {
     height: 1122
 
     Rectangle {
+        id: titleRect
         anchors.top: parent.top
         width: parent.width
         height: 50
@@ -46,6 +47,7 @@ Item {
     }
 
     Rectangle {
+        id: contentRect
         y: 50
         width: parent.width
         height: parent.height - 50
