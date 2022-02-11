@@ -2,7 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>common/BasicTooptip.qml</file>
-        <file>common/CellView.qml</file>
+        <file>common/CellView01.qml</file>
         <file>common/CircleWave.qml</file>
         <file>common/CMessageBox.cpp</file>
         <file>common/CMessageBox.h</file>
@@ -66,11 +66,17 @@
         <file>setting/LightSetting.qml</file>
         <file>setting/MotorSetting.qml</file>
         <file>setting/WeightSetting.qml</file>
-        <file>CusConfig.qml</file>
         <file>Pane/ContentPane.qml</file>
         <file>Pane/LeftPane.qml</file>
         <file>Pane/RightPane.qml</file>
         <file>Pane/TitlePane.qml</file>
-        <file>newComponent/background.qml</file>
+        <file>newComponent/Background.qml</file>
+        <file>newPane/GrainSelect.qml</file>
+        <file>newComponent/TextConfig.qml</file>
+    </qresource>
+    <qresource prefix="/Image">
+        <file>image/normal/closeDialog.png</file>
+        <file>image/company/logomaintain.png</file>
+        <file>image/company/logo.png</file>
     </qresource>
 </RCC>
