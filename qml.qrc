@@ -73,6 +73,7 @@
         <file>newComponent/Background.qml</file>
         <file>newPane/GrainSelect.qml</file>
         <file>newComponent/TextConfig.qml</file>
+        <file>newPane/FileImport.qml</file>
     </qresource>
     <qresource prefix="/Image">
         <file>image/normal/closeDialog.png</file>

@@ -1,5 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
+import "../newPane"
 
 Item {
     //    id: background
@@ -53,5 +54,9 @@ Item {
         height: parent.height - 50
         border.color: "#3a3a3a"
         border.width: 1
+    }
+
+    FileImport {
+        id: fileImport
     }
 }
