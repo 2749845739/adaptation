@@ -6,7 +6,7 @@ Item {
     property alias text: labelText.text
     signal clicked
 
-    width: 150
+    width: 170
     height: 35
 
     Rectangle {

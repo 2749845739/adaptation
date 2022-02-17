@@ -3,14 +3,18 @@ import "../CommonComponent"
 
 Item {
     id: grainSelect
+
+    property int rec_width: 250
+    property int rec_height: 400
+
     Row {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: 200
 
         Rectangle {
-            width: 200
-            height: 350
+            width: rec_width
+            height: rec_height
             border.color: "#3a3a3a"
             border.width: 1
             Text {
@@ -20,13 +24,13 @@ Item {
             }
             MouseArea {
                 anchors.fill: parent
-                onClicked: contentPane.source = "qrc:/CommonPane/FileImport.qml"
+                onClicked: contentPane.source = "qrc:/CommonPane/DataImport.qml"
             }
         }
 
         Rectangle {
-            width: 200
-            height: 350
+            width: rec_width
+            height: rec_height
             border.color: "#3a3a3a"
             border.width: 1
             Text {
@@ -36,8 +40,8 @@ Item {
             }
         }
         Rectangle {
-            width: 200
-            height: 350
+            width: rec_width
+            height: rec_height
             border.color: "#3a3a3a"
             border.width: 1
             Text {
@@ -47,8 +51,8 @@ Item {
             }
         }
         Rectangle {
-            width: 200
-            height: 350
+            width: rec_width
+            height: rec_height
             border.color: "#3a3a3a"
             border.width: 1
             Text {

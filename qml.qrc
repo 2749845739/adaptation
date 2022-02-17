@@ -7,8 +7,12 @@
         <file>CommonPane/FileImport.qml</file>
         <file>CommonComponent/TitleOption.qml</file>
         <file>CommonComponent/CusButton.qml</file>
-        <file>AdaptationParameter/AdaptationPicture.qml</file>
-        <file>AdaptationParameter/UnsoundRow.qml</file>
+        <file>CommonPane/ParameterPicture.qml</file>
+        <file>CommonComponent/UnsoundRow.qml</file>
+        <file>CommonComponent/UnsoundOption.qml</file>
+        <file>CommonComponent/CusPicture.qml</file>
+        <file>CommonPane/DataImport.qml</file>
+        <file>CommonPane/CountRatio.qml</file>
     </qresource>
     <qresource prefix="/Image">
         <file>image/normal/closeDialog.png</file>

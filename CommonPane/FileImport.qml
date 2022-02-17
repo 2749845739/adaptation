@@ -18,6 +18,10 @@ Item {
 
         TitleOption {
             text: qsTr("适配参数调整")
+            MouseArea {
+                anchors.fill: parent
+                onClicked: contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
+            }
         }
 
         TitleOption {

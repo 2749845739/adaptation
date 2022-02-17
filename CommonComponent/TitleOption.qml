@@ -2,14 +2,14 @@ import QtQuick 2.0
 
 Item {
     implicitWidth: 150
-    implicitHeight: 35
+    implicitHeight: 50
     property alias text: label.text
     property alias rec_height: rectangle.height
 
     Rectangle {
         id: rectangle
-        width: 150
-        height: 50
+        width: parent.width
+        height: parent.height
         border.color: "#3a3a3a"
         border.width: 1
 
