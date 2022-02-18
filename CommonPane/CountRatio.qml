@@ -1,4 +1,6 @@
 import QtQuick 2.0
+import QtQuick 2.15
+import Qt.labs.qmlmodels 1.0
 import "../CommonComponent"
 
 Item {
@@ -9,7 +11,7 @@ Item {
         anchors.rightMargin: 100 //使用margin时 ，必须配套使用left
         spacing: 50
 
-        //布局中必须指定组件的宽高，1、自定义时明确implicitWidth  2、使用时指定width
+        //布局中必须指定组件的宽高，1、自定义时明确implicitWidth 或者 2、使用时指定width
         TitleOption {
             id: option
             text: qsTr("数据导入")
@@ -33,7 +35,7 @@ Item {
         anchors.fill: parent
     }
 
-    //3个表格
+
 
     //查看图片
 

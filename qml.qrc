@@ -13,6 +13,8 @@
         <file>CommonComponent/CusPicture.qml</file>
         <file>CommonPane/DataImport.qml</file>
         <file>CommonPane/CountRatio.qml</file>
+        <file>CommonComponent/TableSimple.qml</file>
+        <file>CommonComponent/TableComplex.qml</file>
     </qresource>
     <qresource prefix="/Image">
         <file>image/normal/closeDialog.png</file>
