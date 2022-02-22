@@ -15,11 +15,15 @@
         <file>CommonPane/CountRatio.qml</file>
         <file>CommonComponent/TableSimple.qml</file>
         <file>CommonComponent/TableComplex.qml</file>
+        <file>CommonComponent/TableTest.qml</file>
+        <file>CommonComponent/DataImportItem.qml</file>
     </qresource>
     <qresource prefix="/Image">
         <file>image/normal/closeDialog.png</file>
         <file>image/company/logomaintain.png</file>
         <file>image/company/logo.png</file>
         <file>image/normal/open_file_original.png</file>
+        <file>image/normal/image_black.png</file>
+        <file>image/arrow/arrow_right.png</file>
     </qresource>
 </RCC>

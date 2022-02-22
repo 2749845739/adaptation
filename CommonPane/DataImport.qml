@@ -13,22 +13,17 @@ Item {
         TitleOption {
             id: option
             text: qsTr("配置文件导入")
-            MouseArea {
-                anchors.fill: parent
-                onClicked: contentPane.source = "qrc:/CommonPane/FileImport.qml"
-            }
         }
 
         TitleOption {
             text: qsTr("适配参数调整")
             MouseArea {
                 anchors.fill: parent
-                onClicked: contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
+                onClicked: contentPane.source = "qrc:/CommonPane/CountRatio.qml"
             }
         }
 
         TitleOption {
-
             text: qsTr("检测结果调整")
         }
     }

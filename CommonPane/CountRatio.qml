@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import QtQuick 2.15
+import QtQuick.Controls 2.12
 import Qt.labs.qmlmodels 1.0
 import "../CommonComponent"
 
@@ -35,11 +35,85 @@ Item {
         anchors.fill: parent
     }
 
+    TableSimple {
+        id: table01
+        anchors {
+            top: parent.top
+            topMargin: 300
+            left: parent.left
+            leftMargin: 100
+        }
+    }
 
+    TableComplex {
+        id: table02
+        theme: "颗粒比"
+        anchors {
+            top: parent.top
+            topMargin: 170
+            left: table01.right
+            leftMargin: 200
+        }
+    }
 
-    //查看图片
+    TableComplex {
+        id: table03
+        theme: "质量比"
+        anchors {
+            top: table02.bottom
+            topMargin: 50
+            left: table01.right
+            leftMargin: 200
+        }
+    }
 
-    //右侧按钮
+    // Column外部必须包一层Item,否则易出错
+    Item {
+        width: 200
+        height: 200
+        anchors.right: parent.right
+        anchors.rightMargin: 50
+        anchors.verticalCenter: table02.verticalCenter
+        Column {
+            anchors.fill: parent
+            spacing: 12
+            CusPicture {
+                source: "qrc:/Image/image/normal/image_black.png"
+                width: 200
+                height: 150
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+            Text {
+                anchors.horizontalCenter: parent.horizontalCenter
+                font.pixelSize: 20
+                text: "查看图片"
+            }
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
+                console.log("点击了 picture")
+            }
+        }
+    }
+
+    Item {
+        width: 50
+        height: 50
+        z: 2
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.right: parent.right
+        anchors.rightMargin: 100
+        Image {
+            anchors.fill: parent
+            source: "qrc:/Image/image/arrow/arrow_right.png"
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
+        }
+    }
 
     //底部按钮
     Row {

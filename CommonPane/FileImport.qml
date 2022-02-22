@@ -20,7 +20,7 @@ Item {
             text: qsTr("适配参数调整")
             MouseArea {
                 anchors.fill: parent
-                onClicked: contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
+                //                onClicked: contentPane.source = "qrc:/CommonPane/ParameterPicture.qml"
             }
         }
 
@@ -103,6 +103,10 @@ Item {
 
         CusButton {
             text: qsTr("自动适配")
+            MouseArea {
+                anchors.fill: parent
+                onClicked: contentPane.source = "qrc:/CommonPane/CountRatio.qml"
+            }
         }
     }
 }
